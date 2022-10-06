@@ -1,5 +1,5 @@
 
-**** 10/07/22 00:32:29 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/07/22 00:49:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-B1"  [ D:\MDDT\LAB1\b1-pspicefiles\schematic1\b1.sim ] 
 
@@ -32,18 +32,17 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source B1
-R_R4         0 N04913  30 TC=0,0 
-R_R5         0 N04917  50 TC=0,0 
-V_V1         N05315 0 100Vdc
-R_R3         N04913 N04917  20 TC=0,0 
-R_R1         N04913 N05322  24 TC=0,0 
-R_R2         N04917 N05322  10 TC=0,0 
-R_R6         N05322 N05315  13 TC=0,0 
+R_R4         0 N04913  4k TC=0,0 
+R_R5         0 N04917  9k TC=0,0 
+V_V1         N05329 0 12Vdc
+R_R3         N04913 N04917  6k TC=0,0 
+R_R1         N04913 N05329  12k TC=0,0 
+R_R2         N04917 N05329  18k TC=0,0 
 
 **** RESUMING B1.cir ****
 .END
 
-**** 10/07/22 00:32:29 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/07/22 00:49:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-B1"  [ D:\MDDT\LAB1\b1-pspicefiles\schematic1\b1.sim ] 
 
@@ -58,7 +57,7 @@ R_R6         N05322 N05315  13 TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N04913)   43.5000 (N04917)   52.5000 (N05315)  100.0000 (N05322)   67.5000 
+(N04913)    3.2000 (N04917)    3.6000 (N05329)   12.0000 
 
 
 
@@ -66,15 +65,15 @@ R_R6         N05322 N05315  13 TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1        -2.500E+00
+    V_V1        -1.200E-03
 
-    TOTAL POWER DISSIPATION   2.50E+02  WATTS
+    TOTAL POWER DISSIPATION   1.44E-02  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 10/07/22 00:32:29 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/07/22 00:49:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-B1"  [ D:\MDDT\LAB1\b1-pspicefiles\schematic1\b1.sim ] 
 
@@ -86,6 +85,6 @@ R_R6         N05322 N05315  13 TC=0,0
 
 
 
-  License check-out time            =       38.11
-  Total job time (using Solver 1)   =         .20
+  License check-out time            =       40.20
+  Total job time (using Solver 1)   =         .24
 
