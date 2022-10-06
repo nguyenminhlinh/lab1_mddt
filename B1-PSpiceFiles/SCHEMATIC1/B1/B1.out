@@ -1,5 +1,5 @@
 
-**** 10/06/22 23:57:45 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/07/22 00:32:29 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-B1"  [ D:\MDDT\LAB1\b1-pspicefiles\schematic1\b1.sim ] 
 
@@ -32,14 +32,18 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source B1
-R_R1         N04404 N04411  15k TC=0,0 
-R_R3         0 N04411  3.9k TC=0,0 
-V_V1         N04404 0 24Vdc
+R_R4         0 N04913  30 TC=0,0 
+R_R5         0 N04917  50 TC=0,0 
+V_V1         N05315 0 100Vdc
+R_R3         N04913 N04917  20 TC=0,0 
+R_R1         N04913 N05322  24 TC=0,0 
+R_R2         N04917 N05322  10 TC=0,0 
+R_R6         N05322 N05315  13 TC=0,0 
 
 **** RESUMING B1.cir ****
 .END
 
-**** 10/06/22 23:57:45 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/07/22 00:32:29 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-B1"  [ D:\MDDT\LAB1\b1-pspicefiles\schematic1\b1.sim ] 
 
@@ -54,7 +58,7 @@ V_V1         N04404 0 24Vdc
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N04404)   24.0000 (N04411)    4.9524 
+(N04913)   43.5000 (N04917)   52.5000 (N05315)  100.0000 (N05322)   67.5000 
 
 
 
@@ -62,15 +66,15 @@ V_V1         N04404 0 24Vdc
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1        -1.270E-03
+    V_V1        -2.500E+00
 
-    TOTAL POWER DISSIPATION   3.05E-02  WATTS
+    TOTAL POWER DISSIPATION   2.50E+02  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 10/06/22 23:57:45 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/07/22 00:32:29 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-B1"  [ D:\MDDT\LAB1\b1-pspicefiles\schematic1\b1.sim ] 
 
@@ -82,6 +86,6 @@ V_V1         N04404 0 24Vdc
 
 
 
-  License check-out time            =       37.34
-  Total job time (using Solver 1)   =         .22
+  License check-out time            =       38.11
+  Total job time (using Solver 1)   =         .20
 
