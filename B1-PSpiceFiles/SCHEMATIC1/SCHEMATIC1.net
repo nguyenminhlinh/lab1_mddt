@@ -1,7 +1,11 @@
 * source B1
-R_R4         0 N04913  4k TC=0,0 
-R_R5         0 N04917  9k TC=0,0 
-V_V1         N05329 0 12Vdc
-R_R3         N04913 N04917  6k TC=0,0 
-R_R1         N04913 N05329  12k TC=0,0 
-R_R2         N04917 N05329  18k TC=0,0 
+R_R1         N06354 N06345  1 TC=0,0 
+R_R2         N06391 N06345  1.43 TC=0,0 
+V_V1         N06354 0 30Vdc
+V_V2         N06345 N06387 8Vdc
+X_F1    N06391 0 N06391 N06387 SCHEMATIC1_F1 
+
+.subckt SCHEMATIC1_F1 1 2 3 4  
+F_F1         3 4 VF_F1 0.4
+VF_F1         1 2 0V
+.ends SCHEMATIC1_F1

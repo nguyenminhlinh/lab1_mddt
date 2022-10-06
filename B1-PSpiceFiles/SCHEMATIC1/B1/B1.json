@@ -1,1 +1,1 @@
-{"TimeStamp":"Fri Oct  7 00:49:15 2022\n","Circuits":{"ExitCode":"0","TraceCount":"16","Mode":"SPICE","Type":"TIFullMode","Models":[]}}
+{"TimeStamp":"Fri Oct  7 01:12:07 2022\n","Circuits":{"ExitCode":"0","TraceCount":"18","Mode":"SPICE","Type":"TIFullMode","Models":[{"ModelName":"SCHEMATIC1_F1","FileName":"","ModelType":".subckt","DeviceType":"X","Source":"FROM_INFILE","isLibSigned":"false","isAllowed":"true"}]}}

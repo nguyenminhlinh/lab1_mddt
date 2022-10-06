@@ -1,5 +1,5 @@
 
-**** 10/07/22 00:25:23 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/07/22 01:07:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-B1"  [ D:\MDDT\LAB1\b1-pspicefiles\schematic1\b1.sim ] 
 
@@ -32,26 +32,27 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source B1
-R_R6         N04933 N04866  13 TC=0,0 
-R_Ra         N04873 N04866  40/9 TC=0,0 
-R_Rb         N04913 N04873  80/9 TC=0,0 
-R_Rc         N04917 N04873  100/27 TC=0,0 
-R_R4         N04921 N04913  30 TC=0,0 
-R_R5         N04921 N04917  50 TC=0,0 
-V_V1         N04933 N04921 100Vdc
+R_R1         N06354 N06345  1 TC=0,0 
+R_R2         N06391 N06345  1.43 TC=0,0 
+V_V1         N06354 N06466 30Vdc
+V_V2         N06345 N06387 8Vdc
+X_F1    N06391 N06466 N06391 N06387 SCHEMATIC1_F1 
+
+.subckt SCHEMATIC1_F1 1 2 3 4  
+F_F1         3 4 VF_F1 0.4
+VF_F1         1 2 0V
+.ends SCHEMATIC1_F1
 
 **** RESUMING B1.cir ****
 .END
 
-ERROR(ORPSIM-15142): Node N04933 is floating
+ERROR(ORPSIM-15142): Node N06354 is floating
 
-ERROR(ORPSIM-15142): Node N04866 is floating
+ERROR(ORPSIM-15142): Node N06345 is floating
 
-ERROR(ORPSIM-15142): Node N04873 is floating
+ERROR(ORPSIM-15142): Node N06391 is floating
 
-ERROR(ORPSIM-15142): Node N04913 is floating
+ERROR(ORPSIM-15142): Node N06466 is floating
 
-ERROR(ORPSIM-15142): Node N04917 is floating
-
-ERROR(ORPSIM-15142): Node N04921 is floating
+ERROR(ORPSIM-15142): Node N06387 is floating
 

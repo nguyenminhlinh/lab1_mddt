@@ -1,5 +1,5 @@
 
-**** 10/07/22 00:49:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/07/22 01:12:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-B1"  [ D:\MDDT\LAB1\b1-pspicefiles\schematic1\b1.sim ] 
 
@@ -32,17 +32,21 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source B1
-R_R4         0 N04913  4k TC=0,0 
-R_R5         0 N04917  9k TC=0,0 
-V_V1         N05329 0 12Vdc
-R_R3         N04913 N04917  6k TC=0,0 
-R_R1         N04913 N05329  12k TC=0,0 
-R_R2         N04917 N05329  18k TC=0,0 
+R_R1         N06354 N06345  1 TC=0,0 
+R_R2         N06391 N06345  1.43 TC=0,0 
+V_V1         N06354 0 30Vdc
+V_V2         N06345 N06387 8Vdc
+X_F1    N06391 0 N06391 N06387 SCHEMATIC1_F1 
+
+.subckt SCHEMATIC1_F1 1 2 3 4  
+F_F1         3 4 VF_F1 0.4
+VF_F1         1 2 0V
+.ends SCHEMATIC1_F1
 
 **** RESUMING B1.cir ****
 .END
 
-**** 10/07/22 00:49:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/07/22 01:12:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-B1"  [ D:\MDDT\LAB1\b1-pspicefiles\schematic1\b1.sim ] 
 
@@ -57,7 +61,7 @@ R_R2         N04917 N05329  18k TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N04913)    3.2000 (N04917)    3.6000 (N05329)   12.0000 
+(N06345)   20.0070 (N06354)   30.0000 (N06387)   12.0070 (N06391)    0.0000 
 
 
 
@@ -65,15 +69,17 @@ R_R2         N04917 N05329  18k TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1        -1.200E-03
+    V_V1        -9.993E+00
+    V_V2        -3.997E+00
+    X_F1.VF_F1   9.993E+00
 
-    TOTAL POWER DISSIPATION   1.44E-02  WATTS
+    TOTAL POWER DISSIPATION   3.32E+02  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 10/07/22 00:49:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/07/22 01:12:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-B1"  [ D:\MDDT\LAB1\b1-pspicefiles\schematic1\b1.sim ] 
 
@@ -85,6 +91,6 @@ R_R2         N04917 N05329  18k TC=0,0
 
 
 
-  License check-out time            =       40.20
-  Total job time (using Solver 1)   =         .24
+  License check-out time            =       41.59
+  Total job time (using Solver 1)   =         .20
 
