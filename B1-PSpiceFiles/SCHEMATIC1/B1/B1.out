@@ -1,5 +1,5 @@
 
-**** 10/06/22 13:50:40 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/06/22 14:35:01 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-B1"  [ D:\MDDT\LAB1\b1-pspicefiles\schematic1\b1.sim ] 
 
@@ -32,20 +32,22 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source B1
-R_R1         N00858 N00854  2 TC=0,0 
-R_R2         N00910 N00854  3 TC=0,0 
-R_R3         N01429 N00910  4 TC=0,0 
-R_R7         N00869 N00854  6 TC=0,0 
-R_R6         N00869 N00910  4 TC=0,0 
-R_R4         N01433 N01429  5 TC=0,0 
-R_R8         N00869 0  1 TC=0,0 
-R_R5         N01433 N00869  3 TC=0,0 
-V_V1         N00858 0 12Vdc
+R_R3         N02132 N02615  10k TC=0,0 
+R_R4         N02136 N02132  1k TC=0,0 
+R_R5         N02154 N02136  2k TC=0,0 
+R_R9         N02132 N02154  6k TC=0,0 
+R_R6         N02615 N02154  6k TC=0,0 
+R_R2         N02615 N03275  2k TC=0,0 
+R_R10         N02154 N03275  6k TC=0,0 
+R_R7         0 N02154  9k TC=0,0 
+R_R8         0 N03275  4k TC=0,0 
+R_R1         N03275 N02290  2k TC=0,0 
+I_I1         0 N02290 DC 18mAdc  
 
 **** RESUMING B1.cir ****
 .END
 
-**** 10/06/22 13:50:40 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/06/22 14:35:01 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-B1"  [ D:\MDDT\LAB1\b1-pspicefiles\schematic1\b1.sim ] 
 
@@ -60,9 +62,9 @@ V_V1         N00858 0 12Vdc
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00854)    8.0000 (N00858)   12.0000 (N00869)    2.0000 (N00910)    5.0000     
+(N02132)   42.0000 (N02136)   41.5000 (N02154)   40.5000 (N02290)   90.0000     
 
-(N01429)    4.0000 (N01433)    2.7500 
+(N02615)   49.5000 (N03275)   54.0000 
 
 
 
@@ -70,15 +72,14 @@ V_V1         N00858 0 12Vdc
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1        -2.000E+00
 
-    TOTAL POWER DISSIPATION   2.40E+01  WATTS
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 10/06/22 13:50:40 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 10/06/22 14:35:01 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-B1"  [ D:\MDDT\LAB1\b1-pspicefiles\schematic1\b1.sim ] 
 
@@ -90,6 +91,6 @@ V_V1         N00858 0 12Vdc
 
 
 
-  License check-out time            =       28.03
-  Total job time (using Solver 1)   =         .19
+  License check-out time            =         .61
+  Total job time (using Solver 1)   =         .45
 
