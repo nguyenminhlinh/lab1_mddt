@@ -1,10 +1,5 @@
 .ALIASES
-R_R1            R1(1=N07834 2=N07763 ) CN @B1.SCHEMATIC1(sch_1):INS7626@ANALOG.R.Normal(chips)
-R_R2            R2(1=N07763 2=N07767 ) CN @B1.SCHEMATIC1(sch_1):INS7642@ANALOG.R.Normal(chips)
-R_R3            R3(1=N07763 2=N07794 ) CN @B1.SCHEMATIC1(sch_1):INS7658@ANALOG.R.Normal(chips)
-R_R4            R4(1=N07767 2=N07794 ) CN @B1.SCHEMATIC1(sch_1):INS7674@ANALOG.R.Normal(chips)
-R_R5            R5(1=0 2=N07767 ) CN @B1.SCHEMATIC1(sch_1):INS7690@ANALOG.R.Normal(chips)
-R_R6            R6(1=0 2=N07763 ) CN @B1.SCHEMATIC1(sch_1):INS7706@ANALOG.R.Normal(chips)
-R_R7            R7(1=0 2=N07794 ) CN @B1.SCHEMATIC1(sch_1):INS7722@ANALOG.R.Normal(chips)
-V_V1            V1(+=N07834 -=0 ) CN @B1.SCHEMATIC1(sch_1):INS7747@SOURCE.VDC.Normal(chips)
+R_R6            R6(1=N08087 2=N08080 ) CN @B1.SCHEMATIC1(sch_1):INS7706@ANALOG.R.Normal(chips)
+V_V1            V1(+=N08080 -=0 ) CN @B1.SCHEMATIC1(sch_1):INS7747@SOURCE.VDC.Normal(chips)
+D_D1            D1(1=N08087 2=0 ) CN @B1.SCHEMATIC1(sch_1):INS8064@BREAKOUT.Dbreak.Normal(chips)
 .ENDALIASES
